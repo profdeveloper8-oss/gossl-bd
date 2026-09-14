@@ -25,7 +25,7 @@ export default function CareerPage() {
             Career Opportunities
           </h1>
           <p className="text-slate-400 text-lg">
-            Join our pool of qualified Bangladeshi seafarers for international vessel placements.
+            Join our pool of qualified Bangladeshi seafarers for international vessel placements and create sustainable international career opportunities[cite: 1].
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function CareerPage() {
           {jobs.map((job, idx) => (
             <div 
               key={idx} 
-              className="group relative bg-slate-900/80 backdrop-blur-xl p-8 rounded-2xl border border-slate-800/80 shadow-2xl hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between overflow-hidden"
+              className="group relative bg-slate-900/80 backdrop-blur-xl p-8 rounded-2xl border border-slate-800/80 shadow-2xl hover:border-cyan-500/55 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between overflow-hidden"
             >
               {/* Card Hover Glow Background */}
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
@@ -78,7 +78,7 @@ export default function CareerPage() {
           </div>
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">Ready to sail with global fleets?</h3>
           <p className="text-slate-400 max-w-2xl mx-auto mb-6 text-sm sm:text-base">
-            Submit your resume to our crewing department or get in touch directly through our contact desk for immediate officer and rating evaluations.
+            Submit your resume to our crewing department or get in touch directly through our contact desk for immediate officer and rating evaluations[cite: 1].
           </p>
           <a 
             href="/contact" 
