@@ -55,7 +55,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-slate-400 text-lg">
-            Get in touch with our operations desk for inquiries and immediate assistance.
+            Get in touch with our operations desk for inquiries and immediate assistance[cite: 1].
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export default function ContactPage() {
                     <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
                     Chattogram Office:
                   </p>
-                  <p className="text-slate-300 text-sm">Port Zone, Commercial Area, Chattogram, Bangladesh</p>
+                  <p className="text-slate-300 text-sm">Port Zone, Commercial Area, Chattogram, Bangladesh[cite: 1]</p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-cyan-500/40 transition-colors">
@@ -89,7 +89,7 @@ export default function ContactPage() {
                     <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
                     Dhaka Office:
                   </p>
-                  <p className="text-slate-300 text-sm">Dhaka, Bangladesh</p>
+                  <p className="text-slate-300 text-sm">STDL 52, Janata Housing, Flat 5A (Lift-5), Ring Road, Adabor, Dhaka-1207[cite: 1]</p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-cyan-500/40 transition-colors">
@@ -97,13 +97,13 @@ export default function ContactPage() {
                     <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
                     Email:
                   </p>
-                  <p className="text-slate-300 text-sm font-medium">info@gosslbd.com</p>
+                  <p className="text-slate-300 text-sm font-medium">info@gosslbd.com[cite: 1]</p>
                 </div>
               </div>
             </div>
 
             <div className="text-xs text-slate-500 border-t border-slate-800/80 pt-4">
-              Global Ocean Ship Services Limited — Operating 24/7 for vessel support and maritime logistics.
+              Global Ocean Shipping Services Ltd. (GOSSL) — Operating 24/7 for vessel support and maritime logistics[cite: 1].
             </div>
           </div>
 
