@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Ship, Anchor, Package, ArrowRight } from 'lucide-react';
+import { Ship, Anchor, Package, ArrowRight, ShieldCheck, Building2, Globe } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -191,7 +191,7 @@ export default function Home() {
             </h1>
             
             <p className="text-slate-600 text-lg sm:text-xl font-medium leading-relaxed mb-8 max-w-2xl">
-              {heroDesc}
+              {heroDesc} Established in December 2015 and licensed by the Department of Shipping (DoS) since April 2016, providing professional seafarer recruitment, crew management, and maritime personnel solutions.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
@@ -231,6 +231,43 @@ export default function Home() {
               <Hero3DLogo />
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Overview & Credentials Banner */}
+      <section className="py-16 bg-gradient-to-r from-slate-50 via-cyan-50/30 to-slate-50 border-b border-slate-200/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+              <div className="p-3 bg-cyan-500/10 text-cyan-600 rounded-xl shrink-0">
+                <Building2 className="w-6 h-6" />
+              </div>
+              <div>
+                <h4 className="font-bold text-slate-900 mb-1">SRPS Licensed (DoS)</h4>
+                <p className="text-slate-600 text-xs leading-relaxed">Licensed by the Department of Shipping, Bangladesh since April 2016 (Established Dec 2015).</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+              <div className="p-3 bg-blue-500/10 text-blue-600 rounded-xl shrink-0">
+                <ShieldCheck className="w-6 h-6" />
+              </div>
+              <div>
+                <h4 className="font-bold text-slate-900 mb-1">ISO 9001:2015 Certified</h4>
+                <p className="text-slate-600 text-xs leading-relaxed">Achieved quality management certification in 2017 with full alignment to MLC 2006 welfare standards.</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+              <div className="p-3 bg-teal-500/10 text-teal-600 rounded-xl shrink-0">
+                <Globe className="w-6 h-6" />
+              </div>
+              <div>
+                <h4 className="font-bold text-slate-900 mb-1">Global Partnerships</h4>
+                <p className="text-slate-600 text-xs leading-relaxed">Connecting skilled Bangladeshi seafarers with international shipowners and global maritime operators.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
