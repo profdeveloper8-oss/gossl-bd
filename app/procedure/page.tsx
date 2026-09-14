@@ -9,14 +9,14 @@ export default function ProceduresPage() {
     { num: "02", title: "PRINCIPAL", desc: "Refers to foreign entity engaging seafarers through a licensed manning agency for ship crewing operations." },
     { num: "03", title: "SHIP OWNER", desc: "Refers to shipowner or authorized party taking over ship's operation and crew safety responsibilities." },
     { num: "04", title: "ENROLLMENT", desc: "Refers to the administration of a vessel by accredited principal for employing qualified seafarers." },
-    { num: "05", title: "REGULATION", desc: "Refers to Director General Shipping regulations and maritime labor conventions on seafarers recruitment." },
-    { num: "06", title: "DEPLOYMENT", desc: "Refers to licensed manning agency approved to recruit, train, and officially deploy seafarers worldwide." },
+    { num: "05", title: "REGULATION", desc: "Refers to Director General Shipping regulations, ISO 9001:2015 standards, and Maritime Labour Convention (MLC 2006) guidelines on seafarer recruitment." },
+    { num: "06", title: "DEPLOYMENT", desc: "Refers to licensed manning agency (DoS License since April 2016) approved to recruit, train, and officially deploy seafarers worldwide." },
   ];
 
   const faqs = [
-    { q: "What services does GOSSL BD provide?", a: "We specialize in crew manning, ship supply, logistics, and port services across Bangladeshi ports." },
-    { q: "What compliance standards do you follow?", a: "We strictly follow IMO, MLC 2006, ISO standards, and Department of Shipping (DG Shipping) guidelines." },
-    { q: "How are emergency crew replacements handled?", a: "Our 24/7 team arranges instant visa processing, rapid flight arrangements, and quick transit deployment." },
+    { q: "What services does GOSSL BD provide?", a: "We provide professional seafarer recruitment, crew management, and maritime personnel solutions to the international shipping industry[cite: 1]." },
+    { q: "What compliance standards do you follow?", a: "We operate under an ISO 9001:2015 Quality Management System and adhere strictly to MLC 2006 and Department of Shipping (DoS) guidelines[cite: 1]." },
+    { q: "How are emergency crew replacements handled?", a: "Our dedicated professional team ensures structured recruitment, verification, documentation, and efficient crew deployment[cite: 1]." },
   ];
 
   return (
@@ -62,7 +62,7 @@ export default function ProceduresPage() {
             </span>
           </h1>
           <p className="text-slate-400 text-lg leading-relaxed font-normal">
-            From selection to deployment, we focus on efficiency, safety, and ultimate client satisfaction.
+            From selection to deployment, we focus on efficiency, safety, quality management, and ultimate client satisfaction[cite: 1].
           </p>
         </motion.div>
 
