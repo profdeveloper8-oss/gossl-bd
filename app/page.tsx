@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Ship, Anchor, Package, ArrowRight, ShieldCheck, Building2, Globe, CheckCircle2 } from 'lucide-react';
+import { Ship, Anchor, Package, ArrowRight, ShieldCheck, Building2, Globe } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -191,7 +191,7 @@ export default function Home() {
             </h1>
             
             <p className="text-slate-600 text-lg sm:text-xl font-medium leading-relaxed mb-8 max-w-2xl">
-              {heroDesc} Established in December 2015 and licensed by the Department of Shipping (DoS) since April 2016, providing professional seafarer recruitment, crew management, and maritime personnel solutions[cite: 3].
+              {heroDesc} Established in December 2015 and licensed by the Department of Shipping (DoS) since April 2016, providing professional seafarer recruitment, crew management, and maritime personnel solutions.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
@@ -244,7 +244,7 @@ export default function Home() {
               </div>
               <div>
                 <h4 className="font-bold text-slate-900 mb-1">SRPS Licensed (DoS)</h4>
-                <p className="text-slate-600 text-xs leading-relaxed">Licensed by the Department of Shipping, Bangladesh since April 2016 (Established Dec 2015)[cite: 3].</p>
+                <p className="text-slate-600 text-xs leading-relaxed">Licensed by the Department of Shipping, Bangladesh since April 2016 (Established Dec 2015).</p>
               </div>
             </div>
 
@@ -254,7 +254,7 @@ export default function Home() {
               </div>
               <div>
                 <h4 className="font-bold text-slate-900 mb-1">ISO 9001:2015 Certified</h4>
-                <p className="text-slate-600 text-xs leading-relaxed">Achieved quality management certification in 2017 with full alignment to MLC 2006 welfare standards[cite: 3].</p>
+                <p className="text-slate-600 text-xs leading-relaxed">Achieved quality management certification in 2017 with full alignment to MLC 2006 welfare standards.</p>
               </div>
             </div>
 
@@ -264,7 +264,7 @@ export default function Home() {
               </div>
               <div>
                 <h4 className="font-bold text-slate-900 mb-1">Global Partnerships</h4>
-                <p className="text-slate-600 text-xs leading-relaxed">Connecting skilled Bangladeshi seafarers with international shipowners and global maritime operators[cite: 3].</p>
+                <p className="text-slate-600 text-xs leading-relaxed">Connecting skilled Bangladeshi seafarers with international shipowners and global maritime operators.</p>
               </div>
             </div>
           </div>
@@ -344,29 +344,29 @@ export default function Home() {
               Our Promise
             </span>
             <h3 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white">
-              The right crew. The right experience. The right support[cite: 3].
+              The right crew. The right experience. The right support.
             </h3>
             <p className="text-slate-400 text-base">
-              At GOSSL, we strive to deliver more than manpower—we aim to provide professional maritime personnel solutions that support safe, efficient, and successful vessel operations[cite: 3].
+              At GOSSL, we strive to deliver more than manpower—we aim to provide professional maritime personnel solutions that support safe, efficient, and successful vessel operations.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
             <div className="p-6 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col items-center text-center space-y-3">
               <div className="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold text-xl">🌐</div>
-              <h4 className="font-bold text-lg text-white">Connecting Seafarers to the World[cite: 3]</h4>
+              <h4 className="font-bold text-lg text-white">Connecting Seafarers to the World</h4>
               <p className="text-xs text-slate-400">Bridging talented Bangladeshi maritime professionals with international fleets.</p>
             </div>
 
             <div className="p-6 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col items-center text-center space-y-3">
               <div className="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center font-bold text-xl">🚢</div>
-              <h4 className="font-bold text-lg text-white">Supporting Ships Around the World[cite: 3]</h4>
+              <h4 className="font-bold text-lg text-white">Supporting Ships Around the World</h4>
               <p className="text-xs text-slate-400">Delivering 24/7 operational and crewing excellence across global waters.</p>
             </div>
 
             <div className="p-6 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col items-center text-center space-y-3">
               <div className="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center font-bold text-xl">🤝</div>
-              <h4 className="font-bold text-lg text-white">Building Global Maritime Partnerships[cite: 3]</h4>
+              <h4 className="font-bold text-lg text-white">Building Global Maritime Partnerships</h4>
               <p className="text-xs text-slate-400">Creating long-term relationships based on trust, performance, and mutual growth.</p>
             </div>
           </div>
