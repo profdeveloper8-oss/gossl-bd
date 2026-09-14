@@ -2,33 +2,45 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Anchor, ShieldCheck, Truck, Fuel, ArrowRight, Compass } from 'lucide-react';
+import { Anchor, ShieldCheck, Truck, Users, FileText, Award, ArrowRight, Compass } from 'lucide-react';
 
 export default function ServicesPage() {
   const services = [
     {
-      title: "Ship Supply & Stores",
-      desc: "Fresh provisions, deck/engine stores, safety equipment, and bonded stores at Chattogram & Mongla ports with 24/7 responsiveness.",
-      icon: <Anchor className="w-8 h-8 text-cyan-500" />,
-      tag: "Essential Supplies"
+      title: "Seafarer Recruitment",
+      desc: "Professional sourcing, screening, selection, and placement of qualified maritime personnel[cite: 1].",
+      icon: <Users className="w-8 h-8 text-cyan-500" />,
+      tag: "Recruitment"
     },
     {
-      title: "Husbandry & Crew Services",
-      desc: "Seamless crew embarkation/disembarkation, fast-track visa processing, comfortable hotel transport, and professional medical assistance.",
-      icon: <ShieldCheck className="w-8 h-8 text-teal-500" />,
+      title: "Crew Management",
+      desc: "Reliable crew coordination and support designed to meet the operational requirements of shipowners and managers[cite: 1].",
+      icon: <Anchor className="w-8 h-8 text-teal-500" />,
       tag: "Crew Care"
     },
     {
-      title: "Maritime Logistics & Clearance",
-      desc: "Expert customs brokerage, air/sea spare parts logistics, and fast transit delivery directly to vessel side without delays.",
-      icon: <Truck className="w-8 h-8 text-blue-500" />,
-      tag: "Fast Transit"
+      title: "Maritime Personnel Solutions",
+      desc: "Provision of qualified personnel across various vessel types, ranks, and operational requirements[cite: 1].",
+      icon: <ShieldCheck className="w-8 h-8 text-blue-500" />,
+      tag: "Personnel Solutions"
     },
     {
-      title: "Bunker & Technical Support",
-      desc: "Reliable bunker supply coordination, technical survey assistance, and specialized underwater inspection support.",
-      icon: <Fuel className="w-8 h-8 text-indigo-500" />,
-      tag: "Technical Expert"
+      title: "Training & Development",
+      desc: "Supporting the continuous professional development and competence of maritime personnel[cite: 1].",
+      icon: <Award className="w-8 h-8 text-indigo-500" />,
+      tag: "Professional Growth"
+    },
+    {
+      title: "Documentation & Compliance",
+      desc: "Assistance with required certificates, documentation, verification, and joining formalities[cite: 1].",
+      icon: <FileText className="w-8 h-8 text-cyan-400" />,
+      tag: "Compliance"
+    },
+    {
+      title: "Crew Deployment",
+      desc: "Efficient coordination of crew joining arrangements, travel, documentation, and deployment[cite: 1].",
+      icon: <Truck className="w-8 h-8 text-teal-400" />,
+      tag: "Deployment"
     },
   ];
 
@@ -66,14 +78,14 @@ export default function ServicesPage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed"
           >
-            Tailored, fast, and reliable maritime operations designed for global shipping lines across Chattogram and Mongla ports.
+            Connecting shipowners and ship managers with suitably qualified and experienced maritime professionals who meet specific operational and vessel requirements[cite: 1].
           </motion.p>
         </div>
       </section>
 
       {/* Services Cards Grid */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((item, idx) => (
             <motion.div
               key={idx}
