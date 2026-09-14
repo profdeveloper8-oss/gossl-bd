@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Mail, Phone, Award, Quote } from 'lucide-react';
+import { Mail, Phone, Award, Quote, Building2, ShieldCheck, Compass, Target, CheckCircle2 } from 'lucide-react';
 
 export default function AboutPage() {
   const leaders = [
@@ -35,17 +35,114 @@ export default function AboutPage() {
   ];
 
   return (
-    <main className="bg-slate-950 text-slate-100 min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+    <main className="bg-slate-950 text-slate-100 min-h-screen py-20 px-4 sm:px-6 lg:px-8 space-y-24">
+      
+      {/* 1. Company Overview Section */}
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center max-w-3xl mx-auto mb-16"
+        >
+          <span className="text-cyan-400 font-bold uppercase tracking-wider text-xs bg-cyan-500/10 px-4 py-1.5 rounded-full border border-cyan-500/20">
+            About GOSSL
+          </span>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-white mt-4 mb-4">
+            Global Ocean Shipping Services Ltd.
+          </h1>
+          <p className="text-slate-400 text-base leading-relaxed">
+            An established maritime manpower and crew management company based in Bangladesh, providing professional seafarer recruitment, crew management, and maritime personnel solutions to the international shipping industry.
+          </p>
+        </motion.div>
+
+        {/* History & Certification Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.1 }}
+            className="bg-slate-900/60 border border-slate-800 rounded-3xl p-8 backdrop-blur-sm space-y-4"
+          >
+            <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-4">
+              <Building2 className="w-6 h-6" />
+            </div>
+            <h3 className="text-xl font-bold text-white">Company Heritage & License</h3>
+            <p className="text-slate-300 text-sm leading-relaxed">
+              Founded in December 2015, GOSSL commenced operations after obtaining its SRPS License from the Department of Shipping (DoS), Bangladesh, in April 2016. Since establishment, we have continuously expanded our capabilities, strengthened international relationships, and developed a professional network of qualified maritime personnel.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+            className="bg-slate-900/60 border border-slate-800 rounded-3xl p-8 backdrop-blur-sm space-y-4"
+          >
+            <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-4">
+              <ShieldCheck className="w-6 h-6" />
+            </div>
+            <h3 className="text-xl font-bold text-white">ISO 9001:2015 & MLC 2006</h3>
+            <p className="text-slate-300 text-sm leading-relaxed">
+              In 2017, GOSSL achieved ISO 9001:2015 certification for Quality Management Systems, reflecting our commitment to quality and process excellence. Our operations are fully aligned with the Maritime Labour Convention (MLC 2006), focusing on responsible recruitment and seafarer welfare.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Vision & Mission */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="bg-slate-900/60 border border-slate-800 rounded-3xl p-8 backdrop-blur-sm space-y-4"
+          >
+            <div className="flex items-center gap-3 text-cyan-400 font-bold text-lg">
+              <Compass className="w-5 h-5" />
+              <span>Our Vision</span>
+            </div>
+            <p className="text-slate-300 text-sm leading-relaxed">
+              To be recognized globally as a trusted and leading maritime manpower and crew management company, delivering professional, reliable, and quality-driven solutions to the international shipping industry.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="bg-slate-900/60 border border-slate-800 rounded-3xl p-8 backdrop-blur-sm space-y-4"
+          >
+            <div className="flex items-center gap-3 text-cyan-400 font-bold text-lg">
+              <Target className="w-5 h-5" />
+              <span>Our Mission</span>
+            </div>
+            <ul className="space-y-2 text-slate-300 text-sm">
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-1" />
+                <span>To provide qualified, competent, and experienced seafarers to international shipping companies.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-1" />
+                <span>To maintain high standards of quality, safety, compliance, and ethical recruitment.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-1" />
+                <span>To build strong, transparent, and lasting relationships with global maritime partners.</span>
+              </li>
+            </ul>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* 2. Leadership & Messages Section */}
+      <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-cyan-400 font-bold uppercase tracking-wider text-xs bg-cyan-500/10 px-4 py-1.5 rounded-full border border-cyan-500/20">
             Leadership & Vision
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-white mt-4 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mt-4 mb-3">
             Messages from Our Executive Board
-          </h1>
-          <p className="text-slate-400 text-base">
+          </h2>
+          <p className="text-slate-400 text-sm sm:text-base">
             Guiding Global Ocean Ship Services Limited with decades of maritime experience, technical innovation, and integrity.
           </p>
         </div>
